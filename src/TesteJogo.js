@@ -1,3 +1,6 @@
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
 function TesteJogo(){
 
     let id = 1;
@@ -9,15 +12,30 @@ function TesteJogo(){
     let grupo = "GrupoA"
 
     return(
-        <div>
-            <p> Jogo {id}  </p> 
-            <p> {dupla1} {placar} {dupla2} </p>
-            <p> {categoria} </p>
-            <p> {fase} {grupo} </p>
+        <Card style={{ width: '20rem' }}>
+            <Card.Body>
+                <p> Jogo {id}  </p> 
+                <p> {dupla1} {placar} {dupla2} </p>
+                <p> {categoria} </p>
+                <p> {fase} {grupo} </p>
+            </Card.Body>
 
-        </div>
+        </Card>
     );
 
+}
+
+function quebraLinha(){
+
+    let nome = "PessoaX/PessoaY"
+
+    let nomesSparados = nome.split("/");
+
+    nomesSparados.
+
+    return(
+
+    )
 }
 
 export default TesteJogo
